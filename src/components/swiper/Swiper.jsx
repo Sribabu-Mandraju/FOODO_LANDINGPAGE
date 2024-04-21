@@ -30,16 +30,16 @@ const Swiper1 = ()  => {
         }}
         navigation={false} // Set navigation to false to hide prev and next buttons
         modules={[Autoplay, Pagination]}
-        className="mySwiper border relative h-[60vh]" style={{
-            height:"60vh",
-            marginTop:"100px"
+        className="mySwiper border relative h-[65vh]" style={{
+            height:"70vh",
+            marginTop:"75px"
         }}
       >
-        <div className="absolute w-full h-[100%] border z-[1] pointer-events-none left-0 top-0 flex flex-col justify-center ps-4">
-            <div className="text-5xl sm:text-6xl md:text-6xl font-bold pt-[10px] text-white mt-[20px]">Let<span className="text-[#07F602]">'</span>s</div>
-            <div className="text-5xl sm:text-6xl md:text-6xl font-bold pt-[10px] text-[#07F602]">FEED</div>
-            <div className="text-5xl sm:text-6xl md:text-6xl font-bold pt-[10px] text-white ">Those</div>
-            <div className="text-5xl sm:text-6xl md:text-6xl font-bold pt-[10px] text-[#07F602]"><span className="text-white">In</span> NEED</div>
+        <div className="absolute w-full h-[100%] border  pointer-events-none left-0 top-0 flex flex-col justify-center ps-[50px] md:ps-[100px] ">
+            <div className="text-5xl sm:text-6xl md:text-7xl font-bold pt-[10px] text-white mt-[20px]">Let<span className="text-[#07F602]">'</span>s</div>
+            <div className="text-5xl sm:text-6xl md:text-7xl font-bold pt-[10px] text-[#07F602]">FEED</div>
+            <div className="text-5xl sm:text-6xl md:text-7xl font-bold pt-[10px] text-white ">Those</div>
+            <div className="text-5xl sm:text-6xl md:text-7xl font-bold pt-[10px] text-[#07F602]"><span className="text-white">In</span> NEED</div>
         </div>
         <SwiperSlide className="relative flex justify-center items-center s1 bg-[black] ">
             <div className="absolute left-0 top-0 w-[100%] h-[100%] pointer-events-none flex flex-col">
