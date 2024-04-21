@@ -3,13 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './index.css'
 import Component from './components/Component'
+import Home from './pages/home/Home'
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Component />
+      <Home />
     </>
   )
 }
