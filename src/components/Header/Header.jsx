@@ -44,7 +44,7 @@ const Header = () => {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/causes", label: "Causes" },
+    { href: "/blogs", label: "Blogs" },
     { href: "/donate", label: "Donate" },
     { href: "/contact", label: "Contact" },
   ];
@@ -70,11 +70,11 @@ const Header = () => {
           </Link>
           <ul className=" font-Lato flex-1 flex justify-center items-center gap-8 max-lg:hidden z-[10000000]">
             {navLinks.map((item) => (
-              <li key={item.label} className="py-5">
+              <li key={item.label} className="py-5 w-[80px] ">
                 <Link
                   to={item.href}
-                  className={`leading-normal text-lg text-slate-gray hover:underline py-5 ${
-                    location.pathname === item.href ? "underline" : ""
+                  className={`leading-normal text-lg text-slate-gray px-[20px] py-[10px] w-[100%]  ${
+                    location.pathname === item.href ? "bg-black  text-white rounded-[20px]" : ""
                   }`}
                 >
                   {item.label}

@@ -31,7 +31,7 @@ const Home = () => {
             <div className="font-bold  text-5xl md:text-5xl"  >About Us</div>
             <div className="text-white text-3xl pt-3">
               HOPE <span className="text-[yellow] font-bold"> FOUNDATION FOR HELP POOR PEOPLE </span>
-              <div className="text-white text-2xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid sapiente, laudantium maiores ea optio pariatur vero rationevoluptates voluptatibus nam officia! Pariatur duc imus explicabo modi sint tempore officiis. Quisquam, eveniet?</div>
+              <div className="text-white text-[15px] md:text-[20px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid sapiente, laudantium maiores ea optio pariatur vero rationevoluptates voluptatibus nam officia! Pariatur duc imus explicabo modi sint tempore officiis. Quisquam, eveniet?</div>
               <div className="mt-5 w-full flex flex-rw-reverse">
                 <div className="text-[yellow] underline">Know more......</div>
               </div>
@@ -39,7 +39,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="w-full flex justify-center items-center flex-wrap flex-row-reverse my-5  bg-[#008374] ">
+      <section className="w-full flex justify-center items-center flex-wrap flex-row-reverse my-5 mt-[30px]  bg-[#008374] ">
           <img src={gif1} alt="" className="h-[250px] w-[250px] mt-[40px] md:mt-[-20px] " />
           <div className="flex flex-col ps-3 w-[97%] max-w-[800px] my-5 mb-[40px]">
             <div className="text-3xl sm:text-3xl md:text-4xl font-bold pt-5 ps-[30px] text-white" >
