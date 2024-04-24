@@ -20,7 +20,7 @@ const Contact = () => {
 
   const PostData = async () => {
     try{
-      const response = await axios.post(" http://localhost:3000/api/auth/contact",formData,{
+      const response = await axios.post("https://foodo-landing-1.onrender.com/api/auth/contact",formData,{
         headers:{
           contentType:"application/json"
         }

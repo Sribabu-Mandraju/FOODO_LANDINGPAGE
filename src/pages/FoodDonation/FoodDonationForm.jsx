@@ -54,7 +54,7 @@ const FoodDonationForm = () => {
   const postData = async () => {
     try {
   
-      const response = await fetch("http://localhost:3000/api/auth/donatefood",{
+      const response = await fetch("https://foodo-landing-1.onrender.com/api/auth/donatefood",{
         method:"POST",
         body:JSON.stringify(formData),
         headers: {
