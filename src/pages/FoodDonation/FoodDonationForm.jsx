@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import Select from "react-select";
 import donate from '../../assets/img/donation.png'
 import axios from 'axios'
-import Map from "../../components/Map";
-
+import MyMap from "../../components/Map";
 const FoodDonationForm = () => {
 
     const FoodOptions = [
@@ -271,7 +270,7 @@ const FoodDonationForm = () => {
 
 
         </div>
-        <Map />
+        <MyMap />
 
     </>
   );
