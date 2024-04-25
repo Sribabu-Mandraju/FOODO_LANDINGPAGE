@@ -4,7 +4,9 @@ import contact from "../../assets/img/contact1.jpg";
 import axios from 'axios'
 // import contact from "../../assets/Admin-bro.png";
 
+
 const Contact = () => {
+  const [loading,setLoading] = useState(false)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -37,15 +39,18 @@ const Contact = () => {
           contact:""
         })
       }
+      setLoading(false)
     }
     catch(err){
       console.log(err)
       alert(err.message)
+      setLoading(false)
     }
   }
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    setLoading(true)
 
     if (
       !formData.name ||
@@ -141,12 +146,13 @@ const Contact = () => {
          
           />
 
-          <button
-            className="bg-[#008374] px-4 py-2 my-4 rounded-md text-white font-semibold"
+         
+          {loading?<p className="text-center font-bold bg-[#008374] px-4 py-2 my-4 rounded-md text-white fh-[30px]]">Submitting...</p>: <button
+            className="bg-[#304745] px-4 py-2 my-4 rounded-md text-white font-semibold"
             type="submit"
           >
             Submit
-          </button>
+          </button>}
         </form>
       </div>
     </section>

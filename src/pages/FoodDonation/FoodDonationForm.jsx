@@ -4,6 +4,7 @@ import donate from '../../assets/img/donation.png'
 import axios from 'axios'
 import MyMap from "../../components/Map";
 const FoodDonationForm = () => {
+  const [loading,setLoading] = useState(false)
 
     const FoodOptions = [
         { value: "Veg", label: "Veg" },
@@ -78,14 +79,18 @@ const FoodDonationForm = () => {
 
       } else {
         alert("Submission failed");
+        setLoading(false)
       }
+      setLoading(false)
     } catch (err) {
       console.error(err);
       console.error(err.message);
+      setLoading(false)
     }
   };
   const handleSubmit = (event) => {
     event.preventDefault();
+    setLoading(true)
     console.log(formData)
     // Validation checks
     if (
@@ -263,7 +268,7 @@ const FoodDonationForm = () => {
                 </div>
                 <div className="w-full grid grid-cols-1 md:grid-cols-1 gap-3 my-4">
                 
-                   <button className="w-full rounded-[7px] shadow bg-[#2828c5] py-3 text-white text-center font-bold text-[25px]" type="submit" >Donate</button>
+                   {loading?<p className="w-full rounded-[7px] shadow bg-[#1c1c88] py-3 text-white text-center font-bold text-[25px]">Submitting...</p>:<button className="w-full rounded-[7px] shadow bg-[#2828c5] py-3 text-white text-center font-bold text-[25px]" type="submit" >Donate</button>}
                 </div>
 
             </form>

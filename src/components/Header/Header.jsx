@@ -44,7 +44,6 @@ const Header = () => {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/blogs", label: "Blogs" },
     { href: "/donate", label: "Donate" },
     { href: "/contact", label: "Contact" },
   ];
@@ -66,7 +65,7 @@ const Header = () => {
       <header className="sm:px-8 px-4 py-3  w-full   sm:fixed sm:top-0 bg-[#008374] text-white  z-[100000] ">
         <nav className="flex justify-between items-center max-container">
           <Link to="/" className="text-3xl font-bold" >
-            HOPE.
+            FOODO<span className="text-[blue] text-6xl font-bold">.</span>
           </Link>
           <ul className=" font-Lato flex-1 flex justify-center items-center gap-8 max-lg:hidden z-[10000000]">
             {navLinks.map((item) => (
